@@ -1,7 +1,8 @@
 * {
-    /*border: 1px solid red;*/
+    
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,7 +12,14 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin-bottom: 15px;
+    letter-spacing: 0.1em;
+    font-size: 40px;
+    font-weight: 600;
 }
 
 button {
@@ -49,4 +57,31 @@ button {
 
 .operator:hover {
     background-color:  lightblue;
+}
+
+.first-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.screen {
+    border: 1px solid lightcoral;
+    width: 240px;
+    height: 75px;
+    margin: 3px 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.previous {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.current {
+    font-size: 35px;
+    margin-right: 10px;
 }
